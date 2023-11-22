@@ -1,0 +1,241 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: url(socialsync_bg.png);
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Bebas Neue';
+}
+
+.topNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem !important;
+    margin: 0 5rem;
+}
+
+.topNavLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.topNavLeft img{
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.topNavEmpty{
+    width: 40%;
+}
+
+.topNavRight{
+    width: 30%;
+}
+.topNavRight a{
+    text-decoration: none;
+    color: #2E2E2E;
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    transition: 0.15s;
+}
+.topNavRight a:hover{
+    border-bottom: 0.14em solid;
+    transition: 0.15s;
+    cursor: pointer !important;
+}
+.rightButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightButton a{
+    width: 100%;
+}
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insideMain{
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 5rem;
+    color: #2E2E2E;
+    padding: 2.5rem 0;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards; /* Adjust the duration and easing as needed */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.mainFooter{
+    font-size: 4rem;
+    text-align: center;
+    color: #2E2E2E;
+}
+.mainFooter a{
+    text-decoration: none;
+    color: #2E2E2E;
+    cursor: pointer !important;
+}
+
+
+
+
+.intro{
+    background-color: #2E2E2E;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 3rem 0;
+}
+.introHeading{
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 200 !important;
+    border-bottom: 2px solid #FF69B4;
+    display: inline;
+}
+.about, .mission{
+    padding: 2rem 0;
+}
+.introText{
+    padding: 0rem 16rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.why{
+    color: #2E2E2E;
+    padding: 2rem 10rem;
+    background-image: url(socialsync_bg.png);
+    padding-bottom: 8rem;
+}
+.whyHeading{
+    font-size: 3rem;
+    text-align: center;
+}
+.whyContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyContentLeft, .whyContentRight{
+    width: 50%;
+}
+
+
+.clients{
+    background-color: #2E2E2E;
+    color: whitesmoke;
+    padding: 4rem 10rem;
+}
+.clientsHeading{
+    text-align: center;
+}
+.clientsContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;    
+}
+.client{
+    padding: 1rem;
+    margin: 1rem;
+}
+.clientLogo img{
+    width: 25%;
+}
+
+
+.join{
+    background-image: url(socialsync_bg.png);
+    color: #2E2E2E;
+    padding: 7rem 10rem;
+}
+.join h1{
+    font-size: 10rem;
+    margin: 1rem;
+}
+.join p{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: 1rem;
+}
+
+.contactButton{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: #2E2E2E;
+    border: 0px solid #FF69B4;
+    transition: 0.25s;
+    margin: 2rem 1rem;
+    color: whitesmoke;
+}
+.contactButton:hover{
+    background-color: #171717;
+    cursor: pointer !important;
+    transition: 0.25s;
+    color: #FF69B4;
+}
+
+
+.footerInfo{
+    text-align: center;
+    padding: 5rem 10rem;
+    background-color: #2E2E2E;
+}
+
+.footerInfo img{
+    width: 20%;
+    margin: 3rem 0;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    background-image: url(socialsync_bg.png);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i{
+    margin: 1rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.icons i:hover{
+    cursor: pointer !important;
+}
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
