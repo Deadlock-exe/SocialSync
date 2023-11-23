@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SocialSync</title>
+  <link rel="stylesheet" href="join.css">
+  <link rel="shortcut icon" href="logo_main.png" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b81fd7f057.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="topNav">
+        <div class="topNavLeft">
+            <a href="home.html">
+                <img src="socialsync_name.png" alt="">
+            </a>
+        </div>
+        <div class="topNavEmpty">
+            
+        </div>
+        <div class="topNavRight">
+            <div class="rightButtons">
+                <div class="rightButton">
+                    <a href="">Our Team</a>
+                </div>
+                <div class="rightButton">
+                    <a href="">Services</a>
+                </div>
+                <div class="rightButton" id="current">
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1>REACH OUT TO US</h1>
+    </div>
+
+
+    <div class="formBody">
+        <form action="https://formspree.io/f/meqbbjqd" method="post">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        
+          <label for="message">Message*</label>
+          <textarea id="message" name="message" placeholder="Enter Your Message" maxlength="600" required></textarea>
+        
+          <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+
+<script>
+function submitForm(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Obtain the form element
+  const form = event.target;
+
+  // Use Fetch API to submit the form data asynchronously
+  fetch('process.php', {
+    method: 'POST',
+    body: new FormData(form),
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Display a popup notification based on the server response
+    if (data.status === 'success') {
+      alert('Message sent successfully!');
+    } else {
+      alert('Error: Unable to send message. Please try again later.');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('An unexpected error occurred. Please try again later.');
+  });
+}
+</script>
+
+</body>
+</html>
