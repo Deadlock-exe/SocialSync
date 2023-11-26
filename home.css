@@ -9,6 +9,9 @@ body{
     padding: 0;
     cursor: default;
 }
+p{
+    font-family: sans-serif;
+}
 
 h1,h2,h3,h4,h5{
     font-family: 'Bebas Neue';
@@ -353,7 +356,7 @@ h1,h2,h3,h4,h5{
 }
 footer {
     text-align: center;
-    padding: 15px 0;
+    padding: 5px 0;
     background-color: black;
     bottom: 0;
     width: 100%;
