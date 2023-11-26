@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-image: url(socialsync_bg.png);
+    /* background-image: url(socialsync_bg.png); */
     margin: 0;
     padding: 0;
     cursor: default;
@@ -16,13 +16,21 @@ p{
 h1,h2,h3,h4,h5{
     font-family: 'Bebas Neue';
 }
+.outerHome{
+    background-image: url(socialsync_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0rem 0.5rem;
+}
+
 
 .topNav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.2rem !important;
-    margin: 0 5rem;
+    padding-top: 1.2rem !important;
+    padding: 0 5rem;
 }
 
 .topNavLeft{
@@ -144,13 +152,16 @@ h1,h2,h3,h4,h5{
 
 
 
-
-.intro{
+.outerIntro{
     background-color: #2E2E2E;
+    padding: 1rem 1rem;
+}
+.intro{
+    /* background-color: #2E2E2E; */
     color: whitesmoke;
     text-align: center;
     padding: 5rem 0;
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
 }
 .introHeading{
     font-size: 3.5rem;
@@ -180,11 +191,18 @@ h1,h2,h3,h4,h5{
     }
 }
 
+.outerWhy{
+    background-image: url(socialsync_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2rem 0rem;
+}
 
 .why{
     color: #2E2E2E;
     padding: 2rem 10rem;
-    background-image: url(socialsync_bg.png);
+    /* background-image: url(socialsync_bg.png); */
     padding-bottom: 8rem;
 }
 .whyHeading{
@@ -195,6 +213,11 @@ h1,h2,h3,h4,h5{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
+}
+.whyContent p{
+    font-size: 1.2rem;
+    color: #2E2E2E;
 }
 .whyContentLeft, .whyContentRight{
     width: 50%;
@@ -224,9 +247,11 @@ h1,h2,h3,h4,h5{
     }
 }
 
-
-.clients{
+.outerClients{
     background-color: #2E2E2E;
+}
+.clients{
+    /* background-color: #2E2E2E; */
     color: whitesmoke;
     padding: 4rem 10rem;
 }
@@ -271,9 +296,15 @@ h1,h2,h3,h4,h5{
 }
 
 
-
-.join{
+.outerJoin{
     background-image: url(socialsync_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2rem 0rem;
+}
+.join{
+    /* background-image: url(socialsync_bg.png); */
     color: #2E2E2E;
     padding: 7rem 10rem;
 }
@@ -340,6 +371,9 @@ h1,h2,h3,h4,h5{
     padding: 1rem 3rem;
     border-radius: 20px;
     background-image: url(socialsync_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .icons{
     display: flex;
@@ -357,7 +391,7 @@ h1,h2,h3,h4,h5{
 footer {
     text-align: center;
     padding: 5px 0;
-    background-color: black;
+    background-color: #1d1d1d;
     bottom: 0;
     width: 100%;
     color: white;
