@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name="description" content="Unlock your brand's potential with SocialSync – a top-tier social media agency. We specialize in strategic content creation, data-driven analytics, and tailored social media strategies. Elevate your online presence with our expert services. Explore our portfolio now! #WebDevelopment #SocialMediaMagic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialSync</title>
     <link rel="shortcut icon" href="logo_main.png" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" rel="preload">
     <script src="https://kit.fontawesome.com/b81fd7f057.js" crossorigin="anonymous"></script>
-
+    <link rel="preload" href="socialsync_bg.webp" as="image">
 
 </head>
 <body>
@@ -19,7 +19,7 @@
         <nav class="topNav">
             <div class="topNavLeft">
                 <a href="home.html">
-                    <img src="socialsync_name.png" alt="">
+                    <img src="socialsync_name.png" alt="" draggable="false">
                 </a>
             </div>
             <div class="topNavEmpty">
@@ -28,13 +28,13 @@
             <div class="topNavRight">
                 <div class="rightButtons">
                     <div class="rightButton">
-                        <a href="#">Our Team</a>
+                        <a href="#" target="_blank">Our Team</a>
                     </div>
                     <div class="rightButton">
-                        <a href="#">Services</a>
+                        <a href="#" target="_blank">Services</a>
                     </div>
                     <div class="rightButton">
-                        <a href="join-us.html">Contact Us</a>
+                        <a href="join-us.html" target="_blank" aria-label="Form with co-operation offer">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -83,29 +83,35 @@
             </div>
             <div class="whyContent">
                 <div class="whyContentLeft">
-                    <h1><span style="background-color: #FF69B4; border-radius: 50%; padding: 0.25rem 1rem;">1</span> Strategic Expertise</h1>                
+                    <h1><span class="numberCircle">1</span> Strategic Expertise</h1>                
                     <p>We go beyond posting content. SocialSync's team crafts customized strategies that boost visibility and drive meaningful interactions, turning followers into loyal customers.</p>
                 </div>
                 <div class="whyContentRight" id="time">
-    
+                    <div class="outerImage">
+                        <img src="strategy.png" alt="" draggable="false">
+                    </div>
                 </div>
             </div>
             <div class="whyContent">
                 <div class="whyContentLeft" id="time">
-    
+                    <div class="outerImage">
+                        <img src="creative.png" alt="" draggable="false">
+                    </div>
                 </div>
                 <div class="whyContentRight">
-                    <h1><span style="background-color: #FF69B4; border-radius: 50%; padding: 0.25rem 1rem;">2</span> Creative Ingenuity</h1>
+                    <h1><span class="numberCircle">2</span> Creative Ingenuity</h1>
                     <p>We're not just following trends; we're setting them. SocialSync infuses creativity into every piece of content, from visually stunning graphics to compelling copy.</p>
                 </div>
             </div>
             <div class="whyContent">
                 <div class="whyContentLeft">
-                    <h1><span style="background-color: #FF69B4; border-radius: 50%; padding: 0.25rem 1rem;">3</span> Data-Driven Excellence</h1>                
+                    <h1><span class="numberCircle">3</span> Data-Driven Excellence</h1>                
                     <p>Our approach is rooted in analytics and data-driven insights. We monitor, analyze, and refine strategies to ensure optimal performance, leading to measurable and sustainable results.</p>
                 </div>
                 <div class="whyContentRight" id="time">
-    
+                    <div class="outerImage">
+                        <img src="data.png" alt="" draggable="false">
+                    </div>   
                 </div>
             </div>
         </div>
@@ -117,6 +123,13 @@
                 <h1>WORKED WITH</h1>
             </div>
             <div class="clientsContent">
+                <div class="innerClients">
+                    <img src="client_1.webp" alt="" draggable="false">
+                    <img src="client_1.webp" alt="" draggable="false">
+                    <img src="client_1.webp" alt="" draggable="false">
+                </div>
+            </div>
+            <!-- <div class="clientsContent">
                 <div class="client">
                     <div class="clientHeading">
                         <h1>overlooked whatever whatever</h1>
@@ -139,7 +152,7 @@
                         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Looking for a family to join? A community to grow with? A safe space to create content? How about competing looking to learn? We got just the place for you! Join our discord to find out how to join our growing family!<a href="https://twitter.com/hashtag/OE?src=hash&amp;ref_src=twsrc%5Etfw">#OE</a> <a href="https://twitter.com/hashtag/Overlooked?src=hash&amp;ref_src=twsrc%5Etfw">#Overlooked</a> <a href="https://t.co/yIf50VvUwt">pic.twitter.com/yIf50VvUwt</a></p>&mdash; Overlooked Entertainment &amp; Esports (@Overlooked_Ent) <a href="https://twitter.com/Overlooked_Ent/status/1727018685611839922?ref_src=twsrc%5Etfw">November 21, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
-                <!-- <div class="client">
+                <div class="client">
                     <div class="clientHeading">
                         <h1>overlooked whatever whatever</h1>
                     </div>
@@ -149,8 +162,8 @@
                     <div class="clientTweet">
                         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Looking for a family to join? A community to grow with? A safe space to create content? How about competing looking to learn? We got just the place for you! Join our discord to find out how to join our growing family!<a href="https://twitter.com/hashtag/OE?src=hash&amp;ref_src=twsrc%5Etfw">#OE</a> <a href="https://twitter.com/hashtag/Overlooked?src=hash&amp;ref_src=twsrc%5Etfw">#Overlooked</a> <a href="https://t.co/yIf50VvUwt">pic.twitter.com/yIf50VvUwt</a></p>&mdash; Overlooked Entertainment &amp; Esports (@Overlooked_Ent) <a href="https://twitter.com/Overlooked_Ent/status/1727018685611839922?ref_src=twsrc%5Etfw">November 21, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
             
         </div>
     </div>
@@ -169,27 +182,27 @@
 
 
     <nav class="bottomNav">
-        <a href="#">
+        <a href="#" target="_blank">
             <div class="bottomNavButton">Our Team</div>
         </a>
-        <a href="#">
+        <a href="#" target="_blank">
             <div class="bottomNavButton">Services</div>
         </a>
-        <a href="#">
+        <a href="join-us.html" target="_blank">
             <div class="bottomNavButton">Contact Us</div>
         </a>
     </nav>
     <div class="footerInfo">
-        <img src="socialsync_name.png" alt="">
+        <img src="socialsync_name.png" alt="" draggable="false">
         <div class="icons">
             <a href="https://twitter.com/SocialSyncCo" target="_blank">
-                <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #ff69b4;"></i>
+                <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
             </a>
             <a href="#" target="_blank">
-                <i class="fa-brands fa-discord fa-2xl" style="color: #ff69b4;"></i>
+                <i class="fa-brands fa-discord fa-2xl"></i>
             </a>
             <a href="#" target="_blank">
-                <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ff69b4;"></i>
+                <i class="fa-brands fa-square-instagram fa-2xl"></i>
             </a>
         </div>
     </div>
